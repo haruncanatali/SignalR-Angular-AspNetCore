@@ -5,6 +5,10 @@ Angular & SignalR & Asp.Net Core API & EfCore kullanılarak seçim sonuçları c
 
  - Kendo UI for Angular
 
+#### Yardımcı Kütüphane
+
+ - SqlTableDependency
+
 Ek olarak düzenli şekilde veritabanına veri eklemek için .Net Framework & Ado.Net kullanılarak Transaction Manager projesi oluşturulmuştur.
 
 https://user-images.githubusercontent.com/77530565/153236356-2fae6f23-99d3-4a06-a568-a031ab1ce388.mp4
