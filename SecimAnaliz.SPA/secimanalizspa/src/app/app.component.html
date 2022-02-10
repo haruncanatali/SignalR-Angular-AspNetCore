@@ -1,0 +1,49 @@
+<div class="row">
+  <div class="col-md-7">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="text-center">Meşrutiyet Mahallesi Seçim Canlı Takip </h2>
+      </div>
+      <div class="card-body">
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Parti Adı</th>
+              <th>Oy Sayısı</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{this.sayacSifirla()}}
+            <tr *ngFor="let item of this.seriesData">
+              <td>{{this.sayacArttir()}}</td>
+              <td>{{item.label}}</td>
+              <td>{{item.value}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-5">
+    <div class="card">
+      <div class="card-header">
+        <h3>Grafik</h3>
+      </div>
+      <div class="card-body">
+        <kendo-chart>
+          <kendo-chart-series>
+            <kendo-chart-series-item
+              type="bar"
+              [data]="seriesData"
+              field="value"
+              categoryField="label"
+              
+            >
+            </kendo-chart-series-item>
+          </kendo-chart-series>
+        </kendo-chart>
+      </div>
+    </div>
+  </div>
+</div>
