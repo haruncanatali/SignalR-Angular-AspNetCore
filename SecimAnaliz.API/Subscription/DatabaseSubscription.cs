@@ -41,7 +41,6 @@ namespace SecimAnaliz.API.Subscription
                 var oylar = context.TblOys.ToList();
                 foreach (var item in partiler)
                 {
-
                     dagilim.Add(new OyDto
                     {
                         label = item.PartiAdi,
