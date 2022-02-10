@@ -30,23 +30,12 @@ export class AppComponent {
     this.counter = 0;
   }
 
-  denemeCagir(){
-    this.counter = this.seriesData.length
-    console.log(this.counter)
-  }
-
   ngOnInit() {
   }
     
-
 }
 
 export class TransactionModule{
   label:string="merhaba";
   value:number=123;
-}
-
-export class Deneme{
-  public static label = "";
-  public static sayac = 0;
 }
