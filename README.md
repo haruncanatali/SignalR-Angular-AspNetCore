@@ -16,7 +16,8 @@ Angular & SignalR & Asp.Net Core API & EfCore kullanılarak seçim sonuçları c
 #### Ek SQL Bilgisi
 Asenkron olarak veritabanına bağlanıp veri alabilmemiz için sql serverın broker özelliğinin aktif edilmesi gerekiyor. Bu her tabloda farklı tanımlanmış olabilir. Tanımları görebilmek için aşağıki komut çalıştırılır.
  - select name,is_broker_enabled from sys.databases
-Eğer özellik '0' ise aşaığıdaki komut çalıştırılır.
+ 
+ Eğer özellik '0' ise aşağıdaki komut çalıştırılır.
  - alter database [DboName] set Enable_Broker
 
 *Ek olarak düzenli şekilde veritabanına veri eklemek için .Net Framework & Ado.Net kullanılarak Transaction Manager projesi oluşturulmuştur.
